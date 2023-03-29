@@ -1,0 +1,159 @@
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+:root {
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main: hsl(217, 54%, 11%);
+--Very-dark-blue-card: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+/* Font-size for all p */
+p {
+  font-size: 18px;
+}
+
+.description p, .time p, .footer p {
+  color: var(--Soft-blue);
+}
+
+.eth p {
+  color: var(--Cyan);
+}
+
+/* Inline display for following elements */
+.time p, .eth p, .footer p {
+  display: inline;
+}
+
+/* White span for name */
+.name {
+color: var(--White);
+margin-left: 5px;
+}
+
+
+
+h1 {
+  color: var(--White);
+}
+
+body {
+  background-color: var(--Very-dark-blue-main);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: var(--Very-dark-blue-card);
+  border-radius: 15px;
+  width: 275px;
+  padding: 1.5rem;
+}
+
+.image {
+  position: relative;
+}
+
+.mainImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.description {
+  margin: 0.6rem 0 1rem 0;
+  line-height: 28px;
+  font-weight: 300;
+  color: var(--Soft-blue);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--Soft-blue);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+.eth img {
+  margin-right: 5px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  color: var(--Soft-blue);
+  font-size: 14px;
+}
+.time img {
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer p {
+  font-size: 15px;
+}
+.footer img {
+  border: 1px solid var(--White);
+  border-radius: 50px;
+  margin-right: 1rem;
+  width: 30px;
+}
+
+h1, span, .image {
+  cursor: pointer;
+}
+
+.name:hover, .title h1:hover {
+  color: var(--Cyan);
+}
+
+.image div {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 60%);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
